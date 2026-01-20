@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+# TODO: ensure adherence to PRP 621 metadata
+# See https://www.python.org/dev/peps/pep-0621/
+name = "ABCD"
+description = ""
+dynamic = ["version"]
+readme = "README.md"
+# requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+# TODO: add project homepage (intranet)
+# Homepage = ""
+# TODO: add project issue tracker (intranet)
+# Issues = ""
+# TODO: add project documentation site (intranet)
+# Documentation = ""
+# TODO: add project changelog  (intranet)
+# Changelog = ""
+
+[project.scripts]
+ABCD = "abcd.core:main"
+
+[tool.hatch.version]
+path = "src/ABCD/__init__.py"
